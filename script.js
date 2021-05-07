@@ -1,8 +1,8 @@
-fetch('/penpals.csv')
+fetch('/penpals')
   .then(res => handleCSV(res, "German Penpals"))
-fetch('/25students.csv')
+fetch('/25students')
   .then(res => handleCSV(res, "8th Graders"))
-fetch('/26students.csv')
+fetch('/26students')
   .then(res => handleCSV(res, "7th Graders"))
   
 async function handleCSV(res, canvas_id){
